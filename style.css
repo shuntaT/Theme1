@@ -1,0 +1,429 @@
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a:hover {
+  transition: 0.2s;
+  opacity: 0.7;
+}
+
+
+body {
+  color: #000;
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+header {
+  display: block;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+.Header {
+  width: 100%;
+  position: absolute;
+  padding: 20px 0;
+}
+
+.HeaderContainer {
+  max-width: 100%;
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.HeaderContainer>*:last-child {
+  display: inline-flex;
+}
+
+.HeaderLogo {
+  cursor: pointer;
+}
+
+.HeaderLogo_image_pc {
+  display: block;
+  height: 20px;
+  width: auto;
+}
+
+.HeaderLogo_image_sp {
+  display: none;
+  height: 16px;
+  width: auto;
+}
+
+.HeaderNavHamburger {
+  display: none;
+}
+
+.HeaderNavHamburger_line {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  transform: translate(0, -50%);
+  border-radius: 10px;
+  transition: top 0.2s, transform 0.2s, opacity 0.3s;
+}
+
+.HeaderNavHamburger_line:first-child {
+  top: 0;
+}
+
+.HeaderNavHamburger_line:last-child {
+  top: 100%;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 40px;
+}
+
+.HeaderNavList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.HeaderNavListItem {
+  margin-right: 45px;
+}
+
+.HeaderNavListItem_link {
+  padding: 0;
+  display: block;
+  color: #000;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.HeaderNavListItem_link span {
+  height: 16px;
+}
+
+.HeaderNavListItem_link span:first-child {
+  font-family: 'Lato', sans-serif;
+}
+
+.HeaderNavListItem_button {
+  align-items: center;
+  background-color: #f79214;
+  border: none;
+  border-radius: 38px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700px;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+  height: 40px;
+  padding: 0 20px;
+}
+
+.HeaderNavListItem_link > span {
+  display: block;
+  font-weight: 700;
+  text-align: center;
+}
+
+.TopWrapper {
+  background-image: url(img/top-hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0 28px 0;
+}
+
+.TopWrapper_main_image_sp {
+  display: none;
+  width: 100%;
+}
+
+.TopWrapperContainer {
+  max-width: 1140px;
+  padding: 0 50px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.TopWrapperContents {
+  margin-bottom: 70px;
+  width: fit-content;
+}
+
+.TopWrapper_title {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 54px;
+  margin-bottom: 15px;
+  text-align: center;
+  
+}
+
+.TopWrapper_images {
+  margin-bottom: 25px;
+}
+
+.TopWrapper_images img {
+  margin-right: 8px;
+}
+
+.TopWrapper_buttons {
+  display: flex;
+}
+
+.TopWrapper_buttons a {
+  align-items: center;
+  background-color: #f79214;
+  border: none;
+  border-radius: 38px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 700;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  height: 64px;
+}
+
+.TopWrapper_buttons a:first-child {
+  margin-right: 15px;
+  width: 306px;
+}
+
+.TopWrapper_buttons a:last-child {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  color: #000;
+  width: 176px;
+}
+
+.TopWrapper_captions {
+  color: #a2a2a4;
+  font-size: 12px;
+}
+
+.AboutWrapper {
+  background-color: #f79214;
+  color: white;
+  padding: 45px 0; 
+}
+
+.AboutContainer {
+  max-width: 1140px;
+  padding: 0 50px;
+  margin: 0 auto;
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.About_title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+}
+
+.About_title h2 {
+  font-size: 40px;
+  width: 100%;
+}
+
+.About_title p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-top: 15px;
+}
+
+.About_button {
+  width: 250px;
+}
+
+.About_button a {
+  align-items: center;
+  border: none;
+  border-radius: 38px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 700;
+  height: 64px;
+  text-decoration: none;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  color: #f79214 !important;
+  background-color: white;
+}
+
+.About_button a span:first-child {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.About_button a span:last-child {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+@media screen and (max-width: 767px) {
+
+a:hover {
+  opacity: unset;
+}
+
+  .Header {
+    padding: 15px 0;
+  }
+
+  .HeaderLogo_image_sp {
+    display: block;
+  }
+  .HeaderLogo_image_pc {
+    display: none;
+  }
+
+  .HeaderNavList {
+    top: 52px;
+}
+
+  .TopWrapper_main_image_sp {
+    display: block;
+  }
+
+  .TopWrapper {
+    background-image: none;
+    padding-top: 0;
+  }
+
+  main {
+    padding-top: 52px;
+  }
+
+  .TopWrapperContainer {
+    margin-top: -45vw;
+    padding: 0 20px;
+  }
+
+  .TopWrapperContents {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .TopWrapper_title {
+    font-size: 25px;
+    line-height: 36px;
+  }
+
+  .TopWrapper_images {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .TopWrapper_images img {
+    width: 28%;
+  }
+  .TopWrapper_images img:nth-child(2) {
+    width: 40%;
+  }
+
+  .TopWrapper_buttons {
+    flex-direction: column;
+  }
+
+  .TopWrapper_buttons a {
+    font-size: 14px;
+    width: 100% !important;
+  }
+
+  .TopWrapper_buttons a:first-child {
+    margin: 0 0 10px 0;
+  }
+
+  .AboutWrapper {
+    padding: 30px 0;
+  }
+
+  .AboutContainer {
+    max-width: none;
+    padding: 0 20px;
+  }
+
+  .About_title h2 {
+    font-size: 30px !important;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .AboutContainer {
+    flex-direction: column;
+  }
+
+  .About_title {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .About_button {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .Header {
+    background-color: white;
+  }
+  .HeaderNavHamburger {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 21px;
+    z-index: 100;
+  }
+
+  .HeaderNavList {
+    top: 60px;
+    overflow-y: scroll;
+    position: fixed;
+    left: 100%;
+    width: 100%;
+    display: block;
+    padding: 20px 0 75px 0;
+    transition: transform 0.5s;
+    z-index: 99;
+    height: 100%;
+  }
+
+  main {
+    padding-top: 60px;
+  }
+}
